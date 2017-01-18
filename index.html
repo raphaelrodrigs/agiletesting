@@ -24,10 +24,13 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="#139620">
-					<h1 font-color="#fff">Agile QA</h1>
-					A qualidade do software é responsabilidade de todos os membros do time.<p>
-                    <small>Criado por <a href="mailto:raphael.silva@softdesign.com.br">Raphael Rodrigues</a></small>
+				<section data-background="#123e79">
+					<br><br><br><br>
+					<h1>QA Ágil</h1>
+					<br>
+					---<br>
+                    <small>Criado por <a href="mailto:raphael.silva@softdesign.com.br">Raphael Rodrigues</a></small><br>
+                    <a href="http://www.softdesign.com.br"><img src="img/logosoftdesign.png" width="30%"></a>
 				</section>
 
 				<section>
@@ -65,11 +68,12 @@
 				</section>
 				
 				<section>
-					<section data-background="#123e79">
+					<section data-background="#139620">
 						<h1>Teste Ágil</h1>
+						<h3>Agile Testing</h3>
 					</section>
 					<section>
-						Teste Ágil é uma prática de teste de software que segue os princípios do desenvolvimento ágil, integrando o teste no processo de desenvolvimento, em vez de mantê-lo como uma fase separada no ciclo de desenvolvimento.
+						Teste Ágil é uma prática de teste de software que segue os princípios do desenvolvimento ágil...
 					</section>
 					<section>
 						<h3>Princípios do Desenvolvimento Ágil</h3>
@@ -83,6 +87,11 @@
 						Foco em pessoas <br>
 					</section>
 					<section>
+						...integrando o teste no processo de desenvolvimento, em vez de mantê-lo como uma fase separada no ciclo de desenvolvimento.
+					</section>
+					<section data-background="img/team.gif" background-size="contain">
+					</section>
+					<section>
 						<h2>Workflow Tarefas</h2>
 						<img src="img/Operation_Workflow_Blog.gif">
 						<small>
@@ -90,26 +99,12 @@
 						</small>
 					</section>
 					<section>
-						<h2>Perfils de QAs</h2>
-						<b>Negócio:</b> ajudam o time a entender o contexto de negócio. BDD ou Especificação por Exemplo é uma das técnicas que eles usam para quebrar a barreira entre contexto de negócio e o contexto técnico.<br>
-						<b>Técnico:</b> com muito conhecimento em automação de testes. Os QAs técnicos podem também trabalhar com testes de performance e segurança.<br>
-						<b>DevOps:</b> introduzem a prática de entrega contínua e ajudam o time a criar um pipeline de integração contínua para receber um feedback mais rápido após cada commit.<br><br>
+						<h3>Perfils de QAs</h3>
+						<p class="fragment current-visible visible" data-fragment-index="1"><b>Negócio:</b> ajudam o time a entender o contexto de negócio. BDD ou Especificação por Exemplo é uma das técnicas que eles usam para quebrar a barreira entre contexto de negócio e o contexto técnico.<br></p>
+						<p class="fragment current-visible visible" data-fragment-index="2"><b>Técnico:</b> com muito conhecimento em automação de testes. Os QAs técnicos podem também trabalhar com testes de performance e segurança.<br></p>
+						<p class="fragment current-visible visible" data-fragment-index="3"><b>DevOps:</b> introduzem a prática de entrega contínua e ajudam o time a criar um pipeline de integração contínua para receber um feedback mais rápido após cada commit.<br></p>
 						<small>
 							<a href="https://www.thoughtworks.com/pt/insights/blog/agile-tester-30">Fonte: Testador ágil 3.0 - Daniel Amorim</a>
-						</small>
-					</section>
-					<section>
-						<h2>Quadrante de Teste Ágil</h2>
-						<img src="img/Quadrante-Teste-Agil.png"><br>
-						<small>
-							<a href="http://blog.adaptworks.com.br/2013/11/introducao-do-quadrante-de-teste-agil/">Fonte: Adaptworks</a>
-						</small>
-					</section>
-					<section>
-						<h2>Pirâmide Testes Ágil</h2>
-						<img src="img/testes-em-mtodos-geis-32-638.jpg"><br>
-						<small>
-							<a href="http://image.slidesharecdn.com/testedesoftwareemmetodologiasgeis-101121085407-phpapp02-130411200649-phpapp02/95/testes-em-mtodos-geis-32-638.jpg?cb=1365710844">Fonte: Qualister</a>
 						</small>
 					</section>
 					<section>
@@ -123,6 +118,50 @@
 				</section>
 
 				<section>
+					<section data-background="#80191a">
+						<h1>Mão na Massa</h1>
+					</section>
+					<section>
+						<h2>Mão na Massa</h2>
+						<ol>
+							<li>Separar grupos;</li>
+							<li>Explicar o contexto</li>
+							<li>Executar a "Sprint" (respeitando o timebox)</li>
+							<li>Discutir os resultados</li>
+						</ol>
+					</section>
+					<section>
+						<h3>User Story</h3>
+						<font size=6>
+						<b>Como</b> Colaborador em uma Centralizadora<br>
+						<b>Quero</b> gerar o relatório de Informe de Rendimentos de um cooperado<br>
+						<b>Para</b> visualizar o saldo do cooperado<br><br>
+						</font>
+						<h3>Critério de Aceite</h3>
+						<font size=6>
+						Usuário deve selecionar a consulta por "CPF/CNPJ" ou por "Conta".<br>
+						Usuário deve informar um CPF ou CNPJ para consultar os rendimentos. Caso não informe exibir o alerta "..."</font>
+					</section>
+					<section data-background="img/TestCase.png" data-background-repeat="repeat">
+					</section>
+					<section>
+						<h3>Reforçando Especificação por Exemplo</h3>
+						[ Linguagem Gherkin ]<br><br>
+						<b>Dado</b> [condição]<br>
+						<b>Quando</b> [ação]<br>
+						<b>Então</b> [resultado]<br>
+					</section>
+					<section>
+						<h3>Exemplo</h3>
+						<font size=6>
+						<b>Dado</b> Colaborador em uma Centralizadora visualizando a tela "Gerar Informe de Rendimentos"<br>
+						<b>Quando</b> realiza uma consulta válida por "CPF/CNPJ"<br>
+						<b>Então</b> sistema deve exibir o relatório de rendimentos da conta informada<br>
+						</font>
+					</section>
+				</section>
+
+				<section>
 					<section data-background="#139620">
 						<h1>Time Evolução Soa</h1>
 					</section>
@@ -131,22 +170,16 @@
 						<img src="img/scrumTeam.png">
 					</section>
 					<section>
-						<h2>Processo QA</h2>
-						<img src="img/qaprocess.png">
-						<small>
-							<a href="https://www.scrumalliance.org/system/resource_files/0000/0459/AgileQA.pdf">Fonte: Scrum Alliance</a>
-						</small>
-					</section>
-					<section>
 						<h2>Atividades Durante a Sprint</h2>
-						<li align="left">Automação - RPT e RFT (iniciando)</li>
-						<li align="left">Revisão dos critérios de aceitação</li>
-						<li align="left">Definição dos Cenários de Teste (Gherkin)</li>
-						<li align="left">Execução dos testes manuais</li>
+						<li align="left">Automação - RPT e RFT*</li>
+						<li align="left">Revisão dos Critérios de Aceitação</li>
+						<li align="left">Definição dos Cenários de Teste (Especificação por Exemplo)</li>
+						<li align="left">Execução de testes manuais e exploratórios</li>
 						<li align="left">Participação das cerimônias Scrum (Daily, Gromming, Planning...)</li>
 					</section>
 					<section>
 						<h2>Processo Durante a Sprint</h2>
+						<font size=6>
 						<table>
 							<thead>
 								<tr>
@@ -167,8 +200,7 @@
 								</tr>
 								<tr style="font-weight:bold">
 									<td>Sprint Atual</td>
-									<td>Refinar Especificações
-									</td>
+									<td>Refinar BDD	</td>
 									<td>Testes manual</td>
 									<td>Testes manual</td>
 									<td>Testes manual</td>
@@ -178,43 +210,18 @@
 									<td>-</td>
 									<td>-</td>
 									<td>-</td>
-									<td>Escrever Especificação por exemplo</td>
+									<td>Escrever BDD</td>
 								</tr>
 							</tbody>
 						</table>
-					</section>
-				</section>
-
-				<section>
-					<section data-background="#80191a">
-						<h1>Mão na Massa</h1>
+						 </font>
 					</section>
 					<section>
-						<h2>Mão na Massa</h2>
-						<ol>
-							<li>Separar grupos;</li>
-							<li>Explicar o contexto</li>
-							<li>Executar a "Sprint" (respeitando o timebox)</li>
-							<li>Discutir os resultados</li>
-						</ol>
-					</section>
-					<section>
-						<h2>Reforçando Especificação por Exemplo</h2>
-						<small>Linguagem Gherkin</small><br>
-						<b>Dado</b> [condição]<br>
-						<b>Quando</b> [ação]<br>
-						<b>Então</b> [resultado]<br>
-					</section>
-					<section>
-						<h3>User Story</h3>
-						<b>Como</b> Colaborador em uma Centralizadora<br>
-						<b>Quero</b> gerar o relatório de Informe de Rendimentos de um cooperado<br>
-						<b>Para</b> visualizar o saldo do cooperado<br><br>
-						<h3>Critério de Aceite</h3>
-						Usuário deve selecionar a consulta por "CPF/CNPJ" ou por "Conta".
-						Usuário deve informar um CPF ou CNPJ para consultar os rendimentos. Caso não informe exibir a mensagem "..."			
-					</section>
-					<section data-background="img/TestCase.png" data-background-repeat="repeat">
+						<h2>Processo QA</h2>
+						<img src="img/qaprocess.png">
+						<small>
+							<a href="https://www.scrumalliance.org/system/resource_files/0000/0459/AgileQA.pdf">Fonte: Scrum Alliance</a>
+						</small>
 					</section>
 				</section>
 
@@ -223,7 +230,7 @@
 						<h2>Como eu utilizo Especificação por Exemplo no time...</h2>
 					</section>
 					<section>
-						<h2>Definição do Produto por Gherkin</h2>
+						<h2>Visão Geral</h2>
 						<img src="img/Gherkin-File-per-User-Story-1024x692.png">
 						<small>
 							<a href="http://itsadeliverything.com/which-gherkin-scenarios-go-in-which-feature-file">Fonte: It's a Delivery Thing</a>
